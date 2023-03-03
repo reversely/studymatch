@@ -1,9 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+{% block content %}
   <h1>Survey</h1>
   <form method="post">
     {% csrf_token %}
+    <p>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </p>
     <p>Question 1:</p>
     <input type="radio" id="q1_1" name="q1" value="1">
     <label for="q1_1">1</label>
@@ -13,4 +23,38 @@
     <label for="q1_3">3</label>
     <input type="radio" id="q1_4" name="q1" value="4">
     <label for="q1_4">4</label>
-    <input type="radio" id="q1_5" name="q1
+    <input type="radio" id="q1_5" name="q1" value="5">
+    <label for="q1_5">5</label>
+    <p>Question 2:</p>
+    <input type="radio" id="q2_1" name="q2" value="1">
+    <label for="q2_1">1</label>
+    <input type="radio" id="q2_2" name="q2" value="2">
+    <label for="q2_2">2</label>
+    <input type="radio" id="q2_3" name="q2" value="3">
+    <label for="q2_3">3</label>
+    <input type="radio" id="q2_4" name="q2" value="4">
+    <label for="q2_4">4</label>
+    <input type="radio" id="q2_5" name="q2" value="5">
+    <label for="q2_5">5</label>
+    <p>Question 3:</p>
+    <input type="radio" id="q1_1" name="q1" value="1">
+    <label for="q1_1">1</label>
+    <input type="radio" id="q1_2" name="q1" value="2">
+    <label for="q1_2">2</label>
+    <input type="radio" id="q1_3" name="q1" value="3">
+    <label for="q1_3">3</label>
+    <input type="radio" id="q1_4" name="q1" value="4">
+    <label for="q1_4">4</label>
+    <input type="radio" id="q1_5" name="q1" value="5">
+    <label for="q1_5">5</label>
+    <p>Question 4:</p>
+    <input type="radio" id="q1_1" name="q1" value="1">
+    <label for="q1_1">1</label>
+    <input type="radio" id="q1_2" name="q1" value="2">
+    <label for="q1_2">2</label>
+    <input type="radio" id="q1_3" name="q1" value="3">
+    <label for="q1_3">3</label>
+    <input type="radio" id="q1_4" name="q1" value="4">
+    <label for="q1_4">4</label>
+    <input type="radio" id="q1_5" name="q1" value="5">
+    <label for="q1_5">5</label>
